@@ -23,4 +23,4 @@ jobs:
 
       - name: Subir CSV al bucket upeu-bucket-entrada
         run: |
-          aws s3 DataCovid.csv s3://upeu-bucket-entrada/ --acl bucket-owner-full-control
+          aws s3 cp DataCovid.csv s3://upeu-bucket-entrada/ --acl bucket-owner-full-control
