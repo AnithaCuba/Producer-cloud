@@ -21,6 +21,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Subir CSV al bucket upeu-bucket-entrada
+      - name: Subir CSV al bucket S3 upeu-bucket-entrada
         run: |
           aws s3 cp DataCovid.csv s3://upeu-bucket-entrada/ --acl bucket-owner-full-control
